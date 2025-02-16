@@ -34,7 +34,7 @@ function App() {
   const [hourlyView, setHourlyView] = useState(false);
   const [hourlyIndex, setHourlyIndex] = useState(0);
 
-  const API_KEY = 'xxxxxxxxx'; // Put API key from openweathermap here
+  const API_KEY = import.meta.env.VITE_API_KEY; // your openweathermap API key
 
   const getWeatherIcon = (condition: string) => {
     switch (condition.toLowerCase()) {
